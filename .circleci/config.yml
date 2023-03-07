@@ -4,14 +4,14 @@ jobs:
   build:
     working_directory: ~/circleci-node
     docker:
-      - image: "circleci/node:12.22.7-bullseye-browsers-legacy"
+      - image: "circleci/node"
     steps:
       - checkout
       - run: node main.js
   test:
     working_directory: ~/circleci-node
     docker:
-      - image: "circleci/node:12.22.7-bullseye-browsers-legacy"
+      - image: "circleci/node"
     steps:
       - checkout
       - run: npm i
