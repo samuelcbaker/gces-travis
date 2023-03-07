@@ -1,0 +1,22 @@
+{
+  "name": "gces-travis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelcbaker/gces-travis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuelcbaker/gces-travis/issues"
+  },
+  "homepage": "https://github.com/samuelcbaker/gces-travis#readme",
+  "dependencies": {
+    "jest": "^29.5.0"
+  }
+}

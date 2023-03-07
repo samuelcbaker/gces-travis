@@ -2,19 +2,19 @@ version: 2.1
 
 jobs:
   build:
-    working_directory: ~/circleci-python
+    working_directory: ~/circleci-node
     docker:
-      - image: "circleci/python:3.6.4"
+      - image: "circleci/node:12.22.7-bullseye-browsers-legacy"
     steps:
       - checkout
-      - run: python3 main.py
+      - run: node main.js
   test:
-    working_directory: ~/circleci-python
+    working_directory: ~/circleci-node
     docker:
-      - image: "circleci/python:3.6.4"
+      - image: "circleci/node:12.22.7-bullseye-browsers-legacy"
     steps:
       - checkout
-      - run: python3 main-test.py
+      - run: node main-test.js
 
 workflows:
   build_and_test:
